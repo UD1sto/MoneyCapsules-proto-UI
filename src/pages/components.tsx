@@ -298,7 +298,7 @@ export default function ComponentsPage() {
                 </p>
                 <NextImage
                   className='mt-8'
-                  src='/favicon/apple-icon-180x180.png'
+                  src='/favicon/apple-touch-icon-180x180.png'
                   width='180'
                   height='180'
                   alt='Icon'

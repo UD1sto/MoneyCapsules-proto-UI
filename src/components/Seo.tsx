@@ -5,8 +5,8 @@ import { openGraph } from '@/lib/helper';
 
 // !STARTERCONF Change these default meta
 const defaultMeta = {
-  title: 'Next.js + Tailwind CSS + TypeScript Starter',
-  siteName: 'Next.js + Tailwind CSS + TypeScript Starter',
+  title: 'Money Capsules',
+  siteName: 'Money Capsules',
   description:
     'A starter for Next.js, Tailwind CSS, and TypeScript with Absolute Import, Seo, Link component, pre-configured with Husky',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
@@ -101,47 +101,37 @@ const favicons: Array<Favicons> = [
   {
     rel: 'apple-touch-icon',
     sizes: '57x57',
-    href: '/favicon/apple-icon-57x57.png',
-  },
-  {
-    rel: 'apple-touch-icon',
-    sizes: '60x60',
-    href: '/favicon/apple-icon-60x60.png',
+    href: '/favicon/apple-touch-icon-57x57.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '72x72',
-    href: '/favicon/apple-icon-72x72.png',
+    href: '/favicon/apple-touch-icon-72x72.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '76x76',
-    href: '/favicon/apple-icon-76x76.png',
+    href: '/favicon/apple-touch-icon-76x76.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '114x114',
-    href: '/favicon/apple-icon-114x114.png',
+    href: '/favicon/apple-touch-icon-114x114.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '120x120',
-    href: '/favicon/apple-icon-120x120.png',
+    href: '/favicon/apple-touch-icon-120x120.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '144x144',
-    href: '/favicon/apple-icon-144x144.png',
+    href: '/favicon/apple-touch-icon-144x144.png',
   },
   {
     rel: 'apple-touch-icon',
     sizes: '152x152',
-    href: '/favicon/apple-icon-152x152.png',
-  },
-  {
-    rel: 'apple-touch-icon',
-    sizes: '180x180',
-    href: '/favicon/apple-icon-180x180.png',
+    href: '/favicon/apple-touch-icon-152x152.png',
   },
   {
     rel: 'icon',
