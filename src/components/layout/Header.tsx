@@ -3,6 +3,7 @@ import * as React from 'react';
 import ButtonLink from '@/components/links/ButtonLink';
 import UnstyledLink from '@/components/links/UnstyledLink';
 
+import Discord from '~/svg/Discord.svg';
 import Logo from '~/svg/Logo.svg';
 
 // const links = [
@@ -36,13 +37,25 @@ export default function Header() {
             </ul>
           </nav> */}
 
-          <ButtonLink
-            className='rounded-full border-white text-white hover:text-primary-500'
-            variant='outline'
-            href='https://saddle-frontend-nine.vercel.app/'
-          >
-            Launch App
-          </ButtonLink>
+          {process.env.NEXT_PUBLIC_PRE_RELEASE !== 'true' && (
+            <ButtonLink
+              className='rounded-full border-white text-white hover:text-primary-500'
+              variant='outline'
+              href='https://saddle-frontend-nine.vercel.app/'
+            >
+              Launch App
+            </ButtonLink>
+          )}
+          {process.env.NEXT_PUBLIC_PRE_RELEASE === 'true' && (
+            <ButtonLink
+              className='inline-flex gap-2 rounded-full border-white text-white hover:text-primary-500'
+              variant='outline'
+              href='https://discord.gg/tZHdEPP5'
+            >
+              <span>Join us</span>{' '}
+              <Discord width={20} height={20} fill='currentColor' />
+            </ButtonLink>
+          )}
         </div>
       </div>
     </header>

@@ -24,6 +24,41 @@ import Twitter from '~/svg/Twitter.svg';
 // to customize the default configuration.
 
 export default function HomePage() {
+  if (process.env.NEXT_PUBLIC_PRE_RELEASE === 'true') {
+    return (
+      <Layout>
+        {/* <Seo templateTitle='Home' /> */}
+        <Seo />
+
+        <main className='-mt-20'>
+          <section>
+            <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
+              <div className='flex flex-col items-center gap-4 text-white'>
+                <div className=' max-w-2xl rounded-full  bg-gradient-to-r from-[#6EE7B7] to-[#3B82F6]  p-1 text-2xl'>
+                  <div className='flex items-center justify-center gap-2 p-1 text-xl font-bold text-[#3B82F6]'>
+                    <span className='rounded-l-full bg-white py-3 pl-3 pr-2'>
+                      Money
+                    </span>
+                    <span className='rounded-r-full bg-white py-3 pr-3 pl-2'>
+                      Capsules
+                    </span>
+                  </div>
+                </div>
+
+                <h1 className='max-w-3xl text-6xl font-bold md:text-8xl'>
+                  COMING SOON
+                </h1>
+                <p className='max-w-2xl font-mono text-base md:text-lg'>
+                  Stay tuned!
+                </p>
+              </div>
+            </div>
+          </section>
+        </main>
+      </Layout>
+    );
+  }
+
   return (
     <Layout>
       {/* <Seo templateTitle='Home' /> */}
