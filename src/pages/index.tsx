@@ -1,10 +1,13 @@
 import * as React from 'react';
 
+import styles from '../styles/Home.module.css';
 import Layout from '@/components/layout/Layout';
 import ArrowLink from '@/components/links/ArrowLink';
 import ButtonLink from '@/components/links/ButtonLink';
+import Button from '@/components/buttons/Button';
 import UnstyledLink from '@/components/links/UnstyledLink';
 import Seo from '@/components/Seo';
+import Link from 'next/link';
 
 import Discord from '~/svg/Discord.svg';
 import Github from '~/svg/Github.svg';
@@ -30,7 +33,7 @@ export default function HomePage() {
         {/* <Seo templateTitle='Home' /> */}
         <Seo />
 
-        <main className='-mt-20'>
+        <main className={`${styles.bgImg} -mt-20`}>
           <section>
             <div className='layout flex min-h-screen flex-col items-center justify-center text-center'>
               <div className='flex flex-col items-center gap-4 text-white'>
@@ -45,12 +48,11 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <h1 className='max-w-3xl text-6xl font-bold md:text-8xl'>
-                  COMING SOON
-                </h1>
-                <p className='max-w-2xl font-mono text-base md:text-lg'>
-                  Stay tuned!
-                </p>
+                <Link href='liquid-loan'>
+                  <div className='flex flex-wrap gap-2'>
+                    <Button variant={'pill'}>Liquid Loan App</Button>
+                  </div>
+                </Link>
               </div>
             </div>
           </section>
